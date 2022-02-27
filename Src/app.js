@@ -4,12 +4,15 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const path = require("path");
 
+const loginRoute = require('./routes/login');
+
 //html setup
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 
 //middleware routes
+app.use('/login', loginRoute);
 app.get("/", (req, res) => {
   res.render("home");
 });
