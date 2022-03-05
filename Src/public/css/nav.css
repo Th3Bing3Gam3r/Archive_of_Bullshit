@@ -15,9 +15,21 @@
   color: white;
 }
 
-#home {
+a#home {
+  max-height: 40px;
   top: 20px;
+  width: 120px;
+
+  padding: 10px;
+  padding-right: 0;
   background-color: #04aa6d;
+}
+
+.home {
+  margin-left: 18px;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 40px;
 }
 
 #login {
